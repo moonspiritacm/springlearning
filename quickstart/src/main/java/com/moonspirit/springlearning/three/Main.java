@@ -7,10 +7,10 @@ public class Main {
 	public static void main(String[] args) {
 		 AnnotationConfigApplicationContext context =
 	                new AnnotationConfigApplicationContext(Config.class);
-		 DemoAnnotationService demoAnnotationService = context.getBean(DemoAnnotationService.class);
-		 MethodService demoMethodService = context.getBean(MethodService.class);
-		 demoAnnotationService.add();
-		 demoMethodService.add();
+		 AnnotationService annotationService = context.getBean(AnnotationService.class);
+		 MethodService methodService = context.getBean(MethodService.class);
+		 annotationService.add();
+		 methodService.add();
 		 context.close();
 	}
 }
