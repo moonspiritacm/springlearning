@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * @ClassName      HelloService
- * @Description    功能实体类，位于业务逻辑层，将该类声明为 @Service
+ * @Description    功能实体类，位于业务逻辑层，使用注解声明为 @Service
  *
  * @author         moonspirit
  * @date           2018年7月17日    下午4:23:59
@@ -22,6 +22,6 @@ public class HelloService {
 	 * @throws
 	 */
 	public String sayHello(String name) {
-		return "Hello " + name + " !";
+		return "Hello " + name + "!";
 	}
 }
