@@ -5,10 +5,11 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @ClassName      Config
- * @Description    ÅäÖÃÀà£¬¹ÜÀíÒÀÀµ×¢Èë£¬Ê¹ÓÃ×¢½âÉùÃ÷Îª @Configuration£»×¢½â @ComponentScan("") É¨ÃèÖ¸¶¨°üÄÚËùÓĞ Spring bean ×¢½â£¬²¢Ìí¼Óµ½µ½ÈİÆ÷ÖĞ¡£
+ * @Description    é…ç½®ç±»ï¼Œç®¡ç†ä¾èµ–æ³¨å…¥ï¼Œä½¿ç”¨æ³¨è§£å£°æ˜ä¸º @Configurationï¼›
+ *                 æ³¨è§£ @ComponentScan("") æ‰«ææŒ‡å®šåŒ…å†…æ‰€æœ‰è¿›è¡Œæ³¨è§£çš„å®ä½“ç±»ï¼Œå¹¶æ·»åŠ åˆ°åˆ°å®¹å™¨ä¸­ã€‚
  *
  * @author         moonspirit
- * @date           2018Äê7ÔÂ18ÈÕ    ÉÏÎç10:02:24
+ * @date           2018å¹´7æœˆ18æ—¥    ä¸Šåˆ10:56:26
  * @version        1.0.0
  */
 @Configuration

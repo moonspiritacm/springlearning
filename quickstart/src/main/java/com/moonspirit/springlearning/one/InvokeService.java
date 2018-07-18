@@ -5,10 +5,10 @@ import org.springframework.stereotype.Service;
 
 /**
  * @ClassName      InvokeService
- * @Description    ¹¦ÄÜÊµÌåÀà£¬ÒÀÀµ HelloService ÊµÏÖÆä¹¦ÄÜ£¬Ê¹ÓÃ×¢½â @Autowired ½øĞĞ×Ô¶¯×°Åä
+ * @Description    åŠŸèƒ½å®ä½“ç±»ï¼Œä¾èµ– HelloService å®ç°å…¶åŠŸèƒ½ï¼Œä½¿ç”¨æ³¨è§£ @Autowired è¿›è¡Œè‡ªåŠ¨è£…é…
  *
  * @author         moonspirit
- * @date           2018Äê7ÔÂ17ÈÕ    ÏÂÎç4:26:57
+ * @date           2018å¹´7æœˆ18æ—¥    ä¸Šåˆ10:59:31
  * @version        1.0.0
  */
 @Service
