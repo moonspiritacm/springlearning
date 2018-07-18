@@ -1,12 +1,12 @@
 # springlearning
 Spring learning
 
-## ch1-1 »ùÓÚ×¢½âµÄÒÀÀµ×¢Èë¼°ÊµÌåÀà³õÊ¼»¯
+## ch1-1 åŸºäºæ³¨è§£çš„ä¾èµ–æ³¨å…¥åŠå®ä½“ç±»åˆå§‹åŒ–
 
-Ê¹ÓÃ Spring ×¢½âÉùÃ÷ÊµÌåÀà£¬Ïà¹Ø×¢½âÎª @controller ¡¢@servies¡¢@respository¡¢@Component¡£
+ä½¿ç”¨ Spring æ³¨è§£å£°æ˜å®ä½“ç±»ï¼Œç›¸å…³æ³¨è§£ä¸º @controller ã€@serviesã€@respositoryã€@Componentã€‚
 
-ÊµÌåÀàÖĞÊ¹ÓÃ×¢½â½øĞĞÒÀÀµ×¢Èë£¬ÀıÈç @Autowired ×Ô¶¯×°ÔØ¡£
+å®ä½“ç±»ä¸­ä½¿ç”¨æ³¨è§£è¿›è¡Œä¾èµ–æ³¨å…¥ï¼Œä¾‹å¦‚ @Autowired è‡ªåŠ¨è£…è½½ã€‚
 
-ÅäÖÃÀà²»Ìî³äÄÚÈİ£¬×Ô¶¯É¨ÃèÊµÌåÀà¼ÓÈëÈİÆ÷£¬²¢½øĞĞ³õÊ¼»¯¡£
+é…ç½®ç±»ä¸å¡«å……å†…å®¹ï¼Œè‡ªåŠ¨æ‰«æå®ä½“ç±»åŠ å…¥å®¹å™¨ï¼Œå¹¶è¿›è¡Œåˆå§‹åŒ–ã€‚
 
-> °üÃû: `package com.moonspirit.springlearning.one`
+[123](quickstart/src/main/java/com/moonspirit/springlearning/one/)
