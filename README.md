@@ -2,6 +2,8 @@
 
 Spring 框架学习，完全弃用 XML 配置。
 
+# ch1
+
 ## ch1-1 [基于注解的依赖注入](quickstart/src/main/java/com/moonspirit/springlearning/ch1a/)
 
 使用 Spring 注解声明实体类，相关注解为 @controller 、@servies、@respository、@Component。
@@ -50,6 +52,8 @@ Spring 框架学习，完全弃用 XML 配置。
 ## ch1-4 [基于方法规则拦截的 AOP](quickstart/src/main/java/com/moonspirit/springlearning/ch1d/)
 
 方法规则拦截对代码没有侵入性，不需要在被拦截方法上添加注解，仅根据包名、类名或方法名以及参数类型进行拦截，相应的切面类的编写较复杂，关键是 AOP 表达式的编写。
+
+# ch2
 
 ## ch2-1 [Bean 的 Scope](quickstart/src/main/java/com/moonspirit/springlearning/ch2a/)
 
