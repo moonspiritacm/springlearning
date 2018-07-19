@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * @ClassName      InvokeService
- * @Description    功能实体类，依赖 HelloService 实现其功能，使用注解 @Autowired 进行自动装配
+ * @Description    功能实体类，依赖 HelloService 实现功能，使用注解 @Autowired 进行自动装配
  *
  * @author         moonspirit
  * @date           2018年7月18日    上午10:59:31

@@ -1,8 +1,5 @@
 package com.moonspirit.springlearning.ch1b;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 /**
  * @ClassName      InvokeService
  * @Description    功能实体类，依赖 HelloService 实现其功能，不使用注解声明

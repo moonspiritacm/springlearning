@@ -6,10 +6,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
-
 		MethodService methodService = context.getBean(MethodService.class);
 		methodService.add();
-
 		context.close();
 	}
 }

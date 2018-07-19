@@ -1,7 +1,5 @@
 package com.moonspirit.springlearning.ch1b;
 
-import org.springframework.stereotype.Service;
-
 /**
  * @ClassName      HelloService
  * @Description    功能实体类，不使用注解声明
