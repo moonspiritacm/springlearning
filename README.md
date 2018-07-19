@@ -50,3 +50,15 @@ Spring 框架学习，完全弃用 XML 配置。
 ## ch1-4 [基于方法规则拦截的 AOP](quickstart/src/main/java/com/moonspirit/springlearning/ch1d/)
 
 方法规则拦截对代码没有侵入性，不需要在被拦截方法上添加注解，仅根据包名、类名或方法名以及参数类型进行拦截，相应的切面类的编写较复杂，关键是 AOP 表达式的编写。
+
+## ch2-1 [Bean 的 Scope](quickstart/src/main/java/com/moonspirit/springlearning/ch2a/)
+
+Scope 定义 Bean 实例的创建方式和作用域，具体有以下几种：
+
+- Singleton 单例，一个 Spring 容器中只有一个 Bean 实例，全容器共享该实例，默认配置。
+
+- Prototype 多例，每次调用时新建一个 Bean 实例。
+
+- Request Web 项目中，给每个 http request 新建一个 Bean 实例
+
+- Session Web 项目中，给每个 http session 新建一个 Bean 实例
