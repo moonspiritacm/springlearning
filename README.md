@@ -14,7 +14,7 @@ Spring 框架学习，完全弃用 XML 配置。
 
 实体类中不使用任何 Spring 注解，转而在配置类中对各实体类的依赖关系进行集中配置，作用相当于 xml 配置文件。
 
-## ch1-3 [注解式拦截 AspectJ](quickstart/src/main/java/com/moonspirit/springlearning/three/)
+## ch1-3 [基于注解拦截的 AOP](quickstart/src/main/java/com/moonspirit/springlearning/three/)
 
 ### 1. [Action.java](quickstart/src/main/java/com/moonspirit/springlearning/three/Action.java) 根据拦截规则自定义注解
 
@@ -47,7 +47,7 @@ Spring 框架学习，完全弃用 XML 配置。
 
 由于使用了自定义注解，基于注解拦截的切面类编写较简单：通过 @Action 自定义注解声明切点，`@Pointcut("@annotation(Action)")`；通过切点声明建言，@Before("annotationPointCut()")``。
 
-## ch1-3 [方法规则拦截 AspectJ](quickstart/src/main/java/com/moonspirit/springlearning/three/)
+## ch1-3 [基于方法规则拦截的 AOP](quickstart/src/main/java/com/moonspirit/springlearning/three/)
 
 方法规则拦截对代码没有侵入性，不需要在被拦截方法上添加注解，仅根据包名、类名或方法名以及参数类型进行拦截，相应的切面类的编写较复杂，关键是 AOP 表达式的编写。
 
