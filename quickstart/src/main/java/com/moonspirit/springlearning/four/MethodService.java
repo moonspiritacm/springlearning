@@ -1,4 +1,4 @@
-package com.moonspirit.springlearning.three;
+package com.moonspirit.springlearning.four;
 
 import org.springframework.stereotype.Service;
 
@@ -14,6 +14,6 @@ import org.springframework.stereotype.Service;
 public class MethodService {
 
 	public void add() {
-		System.out.println("正在执行 AnnotationService.add() 方法");
+		System.out.println("正在执行 MethodService.add() 方法");
 	}
 }
