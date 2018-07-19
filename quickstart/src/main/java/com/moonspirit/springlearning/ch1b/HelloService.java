@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
  * @date           2018年7月18日    上午10:58:38
  * @version        1.0.0
  */
-@Service
 public class HelloService {
 
 	/**

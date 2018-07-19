@@ -11,10 +11,8 @@ import org.springframework.stereotype.Service;
  * @date           2018年7月18日    上午10:59:31
  * @version        1.0.0
  */
-@Service
 public class InvokeService {
 
-	@Autowired
 	HelloService helloService;
 
 	/**
