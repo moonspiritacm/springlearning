@@ -62,3 +62,31 @@ Scope 定义 Bean 实例的创建方式和作用域，具体有以下几种：
 - Request Web 项目中，给每个 http request 新建一个 Bean 实例
 
 - Session Web 项目中，给每个 http session 新建一个 Bean 实例
+
+## ch2-2 [EL 表达式与资源调用](quickstart/src/main/java/com/moonspirit/springlearning/ch2b/)
+
+使用 common-io 可以简化文件操作：
+
+```xml
+<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.6</version>
+</dependency>
+```
+Spring 主要在 `@Value()` 的参数中使用表达式，实现资源注入：
+
+- 普通字符串 `@Value("I Love You!")`
+
+- 操作系统属性 `@Value("#{systemProperties['os.name']}")`
+
+- 表达式结果 `@Value("#{T(java.lang.Math).random() * 100.0}")`
+
+- 其他类属性 `@Value("#{basicService.str}")`
+
+- 文件资源 `@Value("classpath:text.txt")`
+
+- 网址资源 `@Value("http://www.baidu.com")`
+
+- 配置文件 `@Value("${book.name}")` 或者 `environment.getProperty("book.author")`
