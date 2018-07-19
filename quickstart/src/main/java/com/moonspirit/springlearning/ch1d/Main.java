@@ -1,4 +1,4 @@
-package com.moonspirit.springlearning.four;
+package com.moonspirit.springlearning.ch1d;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

@@ -1,4 +1,4 @@
-package com.moonspirit.springlearning.three;
+package com.moonspirit.springlearning.ch1c;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

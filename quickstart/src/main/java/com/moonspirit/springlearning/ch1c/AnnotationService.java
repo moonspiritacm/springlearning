@@ -1,4 +1,4 @@
-package com.moonspirit.springlearning.three;
+package com.moonspirit.springlearning.ch1c;
 
 import org.springframework.stereotype.Service;
 

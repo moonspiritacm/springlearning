@@ -1,4 +1,4 @@
-package com.moonspirit.springlearning.one;
+package com.moonspirit.springlearning.ch1a;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
  * @version        1.0.0
  */
 @Configuration
-@ComponentScan("com.moonspirit.springlearning.one")
+@ComponentScan("com.moonspirit.springlearning.ch1a")
 public class Config {
 
 }

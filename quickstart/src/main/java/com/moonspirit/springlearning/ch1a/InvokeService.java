@@ -1,4 +1,4 @@
-package com.moonspirit.springlearning.one;
+package com.moonspirit.springlearning.ch1a;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

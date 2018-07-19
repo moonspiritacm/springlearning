@@ -1,4 +1,4 @@
-package com.moonspirit.springlearning.three;
+package com.moonspirit.springlearning.ch1d;
 
 import java.lang.reflect.Method;
 
@@ -12,8 +12,8 @@ import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.stereotype.Component;
 
 /**
- * @ClassName      AnnotationAspect
- * @Description    AnnotationService 切面类
+ * @ClassName      MethodAspect
+ * @Description    MethodService 切面类
  *
  * @author         moonspirit
  * @date           2018年7月19日    上午10:47:40
@@ -21,18 +21,18 @@ import org.springframework.stereotype.Component;
  */
 @Aspect
 @Component
-public class AnnotationAspect {
+public class MethodAspect {
 
 	/**
-	 * @MethodName       annotationPointCut
+	 * @MethodName       methodPointCut
 	 * @Description      定义切点，相当于连接点的查询条件
 	 *
 	 * @param            
 	 * @return           void
 	 * @throws
 	 */
-	@Pointcut("@annotation(Action)")
-	public void annotationPointCut() {
+	@Pointcut("execution(* MethodService.*(..))")
+	public void methodPointCut() {
 	};
 
 	/**
@@ -43,12 +43,11 @@ public class AnnotationAspect {
 	 * @return           void
 	 * @throws
 	 */
-	@Before("annotationPointCut()")
+	@Before("methodPointCut()")
 	public void before(JoinPoint joinPoint) {
 		MethodSignature signature = (MethodSignature) joinPoint.getSignature();
 		Method method = signature.getMethod();
-		Action action = method.getAnnotation(Action.class);
-		System.out.println("注解式拦截，前置通知：" + action.name());
+		System.out.println("方法规则拦截，前置通知：" + method.getName());
 	}
 
 	/**
@@ -59,12 +58,11 @@ public class AnnotationAspect {
 	 * @return           void
 	 * @throws
 	 */
-	@After("annotationPointCut()")
+	@After("methodPointCut()")
 	public void after(JoinPoint joinPoint) {
 		MethodSignature signature = (MethodSignature) joinPoint.getSignature();
 		Method method = signature.getMethod();
-		Action action = method.getAnnotation(Action.class);
-		System.out.println("注解式拦截，后置通知：" + action.name());
+		System.out.println("方法规则拦截，后置通知：" + method.getName());
 	}
 
 	/**
@@ -75,11 +73,10 @@ public class AnnotationAspect {
 	 * @return           void
 	 * @throws
 	 */
-	@AfterReturning("annotationPointCut()")
+	@AfterReturning("methodPointCut()")
 	public void afterRetruning(JoinPoint joinPoint) {
 		MethodSignature signature = (MethodSignature) joinPoint.getSignature();
 		Method method = signature.getMethod();
-		Action action = method.getAnnotation(Action.class);
-		System.out.println("注解式拦截，返回后通知：" + action.name());
+		System.out.println("方法规则拦截，返回后通知：" + method.getName());
 	}
 }

@@ -1,4 +1,4 @@
-package com.moonspirit.springlearning.two;
+package com.moonspirit.springlearning.ch1a;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -21,7 +21,7 @@ public class Main {
 	 * @throws
 	 */
 	public static void main(String[] args) {
-		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(JavaConfig.class);
+		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
 		InvokeService invokeService = context.getBean(InvokeService.class);
 		System.out.println(invokeService.invokeHello("world"));
 		context.close();

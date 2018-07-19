@@ -1,4 +1,4 @@
-package com.moonspirit.springlearning.three;
+package com.moonspirit.springlearning.ch1d;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -16,7 +16,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  */
 @Configuration
 @EnableAspectJAutoProxy
-@ComponentScan("com.moonspirit.springlearning.three")
+@ComponentScan("com.moonspirit.springlearning.ch1d")
 public class Config {
 
 }

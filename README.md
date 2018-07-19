@@ -2,7 +2,7 @@
 
 Spring 框架学习，完全弃用 XML 配置。
 
-## ch1-1 [基于注解的依赖注入](quickstart/src/main/java/com/moonspirit/springlearning/one/)
+## ch1-1 [基于注解的依赖注入](quickstart/src/main/java/com/moonspirit/springlearning/ch1a/)
 
 使用 Spring 注解声明实体类，相关注解为 @controller 、@servies、@respository、@Component。
 
@@ -10,13 +10,13 @@ Spring 框架学习，完全弃用 XML 配置。
 
 配置类不添加内容，自动扫描实体类加入容器，并进行初始化。
 
-## ch1-2 [基于 Java 配置的依赖注入](quickstart/src/main/java/com/moonspirit/springlearning/two/)
+## ch1-2 [基于 Java 配置的依赖注入](quickstart/src/main/java/com/moonspirit/springlearning/ch1b/)
 
 实体类中不使用任何 Spring 注解，转而在配置类中对各实体类的依赖关系进行集中配置，作用相当于 xml 配置文件。
 
-## ch1-3 [基于注解拦截的 AOP](quickstart/src/main/java/com/moonspirit/springlearning/three/)
+## ch1-3 [基于注解拦截的 AOP](quickstart/src/main/java/com/moonspirit/springlearning/ch1c/)
 
-### 1. [Action.java](quickstart/src/main/java/com/moonspirit/springlearning/three/Action.java) 根据拦截规则自定义注解
+### 1. [Action.java](quickstart/src/main/java/com/moonspirit/springlearning/ch1c/Action.java) 根据拦截规则自定义注解
 
 - @Retention 定义注解的保留策略
 
@@ -39,15 +39,14 @@ Spring 框架学习，完全弃用 XML 配置。
 
 - @Document 该注解被包含在 javadoc 中
 
-### 2. [AnnotationService.java](quickstart/src/main/java/com/moonspirit/springlearning/three/AnnotationService.java) 基于注解的被拦截类
+### 2. [AnnotationService.java](quickstart/src/main/java/com/moonspirit/springlearning/ch1c/AnnotationService.java) 基于注解的被拦截类
 
 使用自定义注解 @Action 标注连接点，当程序运行到 @Action 标注的位置时触发拦截。
 
-### 3. [AnnotationAspect.java](quickstart/src/main/java/com/moonspirit/springlearning/three/AnnotationAspect.java) 基于注解拦截的切面类
+### 3. [AnnotationAspect.java](quickstart/src/main/java/com/moonspirit/springlearning/ch1c/AnnotationAspect.java) 基于注解拦截的切面类
 
 由于使用了自定义注解，基于注解拦截的切面类编写较简单：通过 @Action 自定义注解声明切点，`@Pointcut("@annotation(Action)")`；通过切点声明建言，@Before("annotationPointCut()")``。
 
-## ch1-4 [基于方法规则拦截的 AOP](quickstart/src/main/java/com/moonspirit/springlearning/four/)
+## ch1-4 [基于方法规则拦截的 AOP](quickstart/src/main/java/com/moonspirit/springlearning/ch1d/)
 
 方法规则拦截对代码没有侵入性，不需要在被拦截方法上添加注解，仅根据包名、类名或方法名以及参数类型进行拦截，相应的切面类的编写较复杂，关键是 AOP 表达式的编写。
-
